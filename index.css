@@ -187,6 +187,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+        width: 100%;  /* Garante que o corpo ocupe toda a largura da tela */
+        height: 100%;  /* Garante que a altura seja 100% da tela */
+    }
+
     .container {
         margin: 0 15px;
     }
