@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Pesquisa</title>
+</head>
+
+<body>
+
+    <div class="header_class">
+        <h2>Formulário de Cadastro</h2>
+        <h3>Uma maneira de entendermos você</h3>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="area_input">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Insira seu nome">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Insira seu e-mail">
+
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" placeholder="Insira sua idade">
+
+                <label for="situacao">Qual a sua situação atual?</label>
+                <select id="situacao">
+                    <option value="">Selecione uma opção</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="trabalhador">Trabalhador</option>
+                    <option value="desempregado">Desempregado</option>
+                    <option value="aposentado">Aposentado</option>
+                </select>
+
+                <label for="recomendacao">Você recomendaria o produto?</label>
+                <ul class="opcoes_checkbox">
+                    <li>
+                        <label>
+                            <input type="radio" name="recomendacao" value="comCerteza">
+                            Com certeza
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="recomendacao" value="talvez">
+                            Talvez
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="recomendacao" value="naoTenhoCerteza">
+                            Não tenho certeza
+                        </label>
+                    </li>
+                </ul>
+
+                <label for="situacao_futuro">O que você quer aprender?</label>
+                <select id="situacao_futuro">
+                    <option value="">Selecione uma opção</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="fullstack">Fullstack</option>
+                    <option value="database">Database</option>
+                </select>
+
+                <label for="linguagens">Quais linguagens você mais se identifica?</label>
+                <ul class="opcoes_checkbox">
+                    <li>
+                        <label>
+                            <input type="checkbox" name="linguagens" value="html">
+                            HTML
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="linguagens" value="css">
+                            CSS
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="linguagens" value="javascript">
+                            JavaScript
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="linguagens" value="c#">
+                            C#
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="linguagens" value="c++">
+                            C++
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="linguagens" value="python">
+                            Python
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="linguagens" value="node">
+                            NodeJS
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="linguagens" value="react">
+                            ReactJS
+                        </label>
+                    </li>
+                </ul>
+                <label for="comentario">Comentário ou Sugestão?</label>
+                <textarea id="comentario" placeholder="Insira o comentário aqui"></textarea>
+
+                <button>Enviar</button>
+            </div>
+        </div>
+    </main>
+    <footer><p>Criado por Felipe / @Devfullfelps</p></footer>
+</body>
+
+</html>

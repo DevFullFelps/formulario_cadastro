@@ -1,0 +1,200 @@
+body {
+    background-image: url('img/img_fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(69, 43, 161, 0.911);
+    z-index: 0;
+}
+
+.header_class {
+    text-align: center;
+    color: #f7f7f7;
+    margin-bottom: 20px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px 40px;
+    background-color: rgba(32, 11, 110, 0.527);
+    border: 1px solid rgba(35, 17, 102, 0.774);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.658);
+    position: relative;
+    z-index: 3;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    flex-grow: 1;
+}
+
+.area_input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0e0e0;
+    padding: 9px;
+}
+
+.area_input input,
+.area_input select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.area_input input:focus,
+.area_input select:focus {
+    border-color: #d400ff;
+    outline: none;
+}
+
+.opcoes_checkbox {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opcoes_checkbox input[type="radio"] {
+    accent-color: rgb(69, 43, 161);
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
+
+.opcoes_checkbox input[type="radio"]:checked {
+    background-color: rgb(69, 43, 161);
+}
+
+.opcoes_checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #f9f9f9;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    color: #333;
+}
+
+.opcoes_checkbox label:hover {
+    background-color: #e0e0e0;
+    color: #000000ab;
+}
+
+.opcoes_checkbox input[type="checkbox"] {
+    accent-color: rgb(69, 43, 161);
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
+
+.opcoes_checkbox input[type="checkbox"]:checked {
+    background-color: rgb(69, 43, 161);
+}
+.area_input textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    min-height: 200px;
+    resize: vertical;
+}
+
+.area_input textarea:focus {
+    border-color: #d400ff;
+    outline: none;
+}
+.area_input button {
+    background-color: #28a745; /* Cor verde */
+    color: #fff; /* Cor do texto */
+    padding: 12px 20px; /* Tamanho do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Altera o cursor para uma mãozinha */
+    width: 100%; /* Faz o botão ocupar toda a largura do container */
+    transition: background-color 0.3s ease; /* Transição suave na cor */
+}
+
+.area_input button:hover {
+    background-color: #218838; /* Cor verde mais escura quando o mouse passa */
+}
+
+footer {
+    margin-top: 10px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 4;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .header_class {
+        margin-bottom: 15px;
+    }
+
+    .area_input input,
+    .area_input select {
+        padding: 12px;
+    }
+}
