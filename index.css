@@ -14,7 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-
 body::before {
     content: '';
     position: absolute;
@@ -22,7 +21,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(69, 43, 161, 0.911);
+    background-color: rgba(69, 43, 161, 0.911); /* Cor roxa sobre a imagem */
     z-index: 0;
 }
 
@@ -139,6 +138,7 @@ main {
 .opcoes_checkbox input[type="checkbox"]:checked {
     background-color: rgb(69, 43, 161);
 }
+
 .area_input textarea {
     width: 100%;
     padding: 10px;
@@ -156,6 +156,7 @@ main {
     border-color: #d400ff;
     outline: none;
 }
+
 .area_input button {
     background-color: #28a745; /* Cor verde */
     color: #fff; /* Cor do texto */
