@@ -22,7 +22,8 @@ body::before {
     right: 0;
     bottom: 0;
     background-color: rgba(69, 43, 161, 0.911); /* Cor roxa sobre a imagem */
-    z-index: 0;
+    z-index: 1;
+    padding-right: 100vh;
 }
 
 .header_class {
