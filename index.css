@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url('img/img_fundo.jpg');
     background-size: cover;
@@ -17,13 +23,9 @@ body {
 body::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(69, 43, 161, 0.911); /* Cor roxa sobre a imagem */
+    inset: 0; /* Substitui top, left, right, bottom */
+    background-color: rgba(69, 43, 161, 0.911);
     z-index: 1;
-    padding-right: 100vh;
 }
 
 .header_class {
